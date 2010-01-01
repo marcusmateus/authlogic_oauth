@@ -48,12 +48,12 @@ module AuthlogicOauth
           validates_length_of_password_field_options validates_length_of_password_field_options.merge(:if => :validate_password_with_oauth?)
           validates_confirmation_of_password_field_options validates_confirmation_of_password_field_options.merge(:if => :validate_password_with_oauth?)
           validates_length_of_password_confirmation_field_options validates_length_of_password_confirmation_field_options.merge(:if => :validate_password_with_oauth?)
-          validates_length_of_login_field_options validates_length_of_login_field_options.merge(:if => :validate_password_with_oauth?)
-          validates_format_of_login_field_options validates_format_of_login_field_options.merge(:if => :validate_password_with_oauth?)
+          # validates_length_of_login_field_options validates_length_of_login_field_options.merge(:if => :validate_password_with_oauth?)
+          # validates_format_of_login_field_options validates_format_of_login_field_options.merge(:if => :validate_password_with_oauth?)
         end
 
         # email needs to be optional for oauth
-        klass.validate_email_field = false
+        # klass.validate_email_field = false
       end
 
       def save(perform_validation = true, &block)

@@ -3,9 +3,7 @@ module AuthlogicOauth
 
   private
 
-    def validate_by_oauth
-      validate_email_field = false
-
+    def validate_by_oauth      
       if oauth_response.blank?
         redirect_to_oauth
       else

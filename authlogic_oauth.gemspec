@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{authlogic-oauth}
-  s.version = "1.0.8"
+  s.name = %q{authlogic-oauth-mateus}
+  s.version = "1.0.9"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["John Allison"]
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/jrallison/authlogic_oauth}
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{authlogic-oauth}
+  s.rubyforge_project = %q{authlogic-oauth-simplitex}
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{An authlogic extension for authenticating via OAuth. (I.E. Twitter login)}
   s.test_files = ["test/acts_as_authentic_test.rb", "test/session_test.rb"]

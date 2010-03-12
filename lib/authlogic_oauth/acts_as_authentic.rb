@@ -40,7 +40,7 @@ module AuthlogicOauth
         return if !klass.column_names.include?(klass.oauth_token_field.to_s)
 
         klass.class_eval do
-          validate :validate_by_oauth, :if => :authenticating_with_oauth?
+          before_validation :check_oauth_state, :if => :authenticating_with_oauth?
 
           validates_uniqueness_of klass.oauth_token_field, :scope => validations_scope, :if => :using_oauth?
           validates_presence_of klass.oauth_secret_field, :scope => validations_scope, :if => :using_oauth?

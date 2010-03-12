@@ -3,7 +3,7 @@ module AuthlogicOauth
 
   private
 
-    def validate_by_oauth      
+    def check_oauth_state      
       if oauth_response.blank?
         redirect_to_oauth
       else
